@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday School</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/saint-james-logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="title">
+            <h1>Sunday School Program</h1>
+            <p class="tagline">St. James Greek Orthodox Church</p>
+          </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul id="nav-menu">
+            <li><a href="#" data-page="home" class="active">Home</a></li>
+            <li><a href="#" data-page="announcements">Announcements</a></li>
+            <li><a href="#" data-page="registration">Registration</a></li>
+            <li><a href="#" data-page="volunteer">Volunteer</a></li>
+            <li><a href="#" data-page="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="hero">
+                <h2>Welcome to Our Sunday School</h2>
+                <p>Nurturing faith and fellowship in the Orthodox Christian tradition</p>
+            </div>
+
+            <div class="card">
+                <h3>About Our Sunday School</h3>
+                <p>Saint James Greek Orthodox Church Sunday School provides a loving, Christ-centered environment where children learn about their Orthodox faith, discover the teachings of Jesus Christ, and develop a personal relationship with God. Our program is designed to instill Orthodox Christian values and traditions while fostering spiritual growth and community.</p>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Orthodox Christian Education</h3>
+                    <p>Age-appropriate lessons rooted in Scripture, Church tradition, and the teachings of the Holy Fathers, helping children understand their Orthodox heritage.</p>
+                </div>
+                <div class="card">
+                    <h3>Divine Liturgy & Worship</h3>
+                    <p>Children learn to participate meaningfully in the Divine Liturgy and understand the beauty of Orthodox worship.</p>
+                </div>
+                <div class="card">
+                    <h3>Faith Community</h3>
+                    <p>Building lasting friendships within our community in a safe, nurturing environment guided by dedicated teachers.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>To guide children in developing a deep, personal relationship with Christ through the teachings and traditions of the Orthodox Church. We strive to create an environment where every child feels valued, loved, and supported in their spiritual journey.</p>
+            </div>
+
+            <!-- <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="button" data-page="registration">Register Your Child</a>
+            </div> -->
+        </div>
+
+        <!-- Class Schedule Page -->
+        <div id="schedule" class="page">
+            <h2 style="color: #667eea; margin-bottom: 1rem;">Class Schedule</h2>
+            
+            <div class="schedule-item">
+                <span class="age-badge">Ages 3-5</span>
+                <h3>Preschool Class</h3>
+                <p><strong>Time:</strong> Sunday 9:00 AM - 10:00 AM</p>
+                <p><strong>Room:</strong> Rainbow Room (Building A, Room 101)</p>
+                <p><strong>Teachers:</strong> Miss Sarah & Mr. Tom</p>
+                <p>Simple Bible stories, songs, and hands-on activities for our youngest learners.</p>
+            </div>
+
+            <div class="schedule-item">
+                <span class="age-badge">Ages 6-8</span>
+                <h3>Elementary Class</h3>
+                <p><strong>Time:</strong> Sunday 9:00 AM - 10:15 AM</p>
+                <p><strong>Room:</strong> Adventure Room (Building A, Room 102)</p>
+                <p><strong>Teachers:</strong> Mrs. Jennifer & Mr. David</p>
+                <p>Interactive Bible lessons, group activities, and scripture memory.</p>
+            </div>
+
+            <div class="schedule-item">
+                <span class="age-badge">Ages 9-11</span>
+                <h3>Upper Elementary Class</h3>
+                <p><strong>Time:</strong> Sunday 9:00 AM - 10:15 AM</p>
+                <p><strong>Room:</strong> Discovery Room (Building A, Room 103)</p>
+                <p><strong>Teachers:</strong> Pastor Mike & Ms. Rachel</p>
+                <p>In-depth Bible study, discussions, and practical faith application.</p>
+            </div>
+
+            <div class="schedule-item">
+                <span class="age-badge">Ages 12-14</span>
+                <h3>Middle School Class</h3>
+                <p><strong>Time:</strong> Sunday 10:30 AM - 11:45 AM</p>
+                <p><strong>Room:</strong> Youth Center (Building B)</p>
+                <p><strong>Leaders:</strong> Youth Pastor James & Ms. Emily</p>
+                <p>Relevant discussions, small groups, and community service projects.</p>
+            </div>
+        </div>
+
+        <!-- Registration Page -->
+        <div id="registration" class="page">
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Register Your Child</h2>
+
+            <!--
+            <form id="registration-form" method="POST">
+                <div class="form-group">
+                    <label for="parent-name">Parent/Guardian Name *</label>
+                    <input type="text" id="parent-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="child-name">Child's Name *</label>
+                    <input type="text" id="child-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="child-age">Child's Age *</label>
+                    <select id="child-age" required>
+                        <option value="">Select Age</option>
+                        <option value="3">3 years old</option>
+                        <option value="4">4 years old</option>
+                        <option value="5">5 years old</option>
+                        <option value="6">6 years old</option>
+                        <option value="7">7 years old</option>
+                        <option value="8">8 years old</option>
+                        <option value="9">9 years old</option>
+                        <option value="10">10 years old</option>
+                        <option value="11">11 years old</option>
+                        <option value="12">12 years old</option>
+                        <option value="13">13 years old</option>
+                        <option value="14">14 years old</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="allergies">Allergies or Special Needs</label>
+                    <textarea id="allergies" rows="3" placeholder="Please list any allergies, medical conditions, or special needs we should be aware of"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="emergency-contact">Emergency Contact Name</label>
+                    <input type="text" id="emergency-contact">
+                </div>
+
+                <div class="form-group">
+                    <label for="emergency-phone">Emergency Contact Phone</label>
+                    <input type="tel" id="emergency-phone">
+                </div> -->
+
+                <!-- <button type="submit" class="button">Register Here</button> -->
+            <!-- </form> -->
+
+            <div class="card-grid">
+                <div class="card">
+                    <span class="age-badge">Ages 0-8</span>
+                    <h3>Child Lesson</h3>
+                    <p>Children will learn about God’s love and the stories of the Bible through interactive activities, songs, and crafts. They explore lessons in a fun, age-appropriate way that helps them understand faith and kindness.</p>
+                </div>
+
+                <div class="card">
+                    <span class="age-badge">Ages 9-14</span>
+                    <h3>Teen Lesson</h3>
+                    <p>Teens will study Scripture more deeply and explore how to live out Christian values in their daily lives. Lessons encourage reflection, conversation, and personal growth in their relationship with God.</p>
+                </div>
+            </div>
+            
+            <button id="registration-button" class="button">Register Here</button>
+        </div>
+
+        <!-- Volunteer Page -->
+        <div id="volunteer" class="page">
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Volunteer</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <span class="age-badge">Ages 18+</span>
+                    <h3>Teachers</h3>
+                    <p>Plans and prepares engaging lessons, guides discussions, and leads activities to help students learn about their faith.</p>
+                </div>
+
+                <div class="card">
+                    <span class="age-badge">Ages 15-17</span>
+                    <h3>Assistants</h3>
+                    <p>Supports the teacher by helping with classroom management, assisting students during activities, and ensuring the class runs smoothly.</p>
+                </div>
+            </div>
+
+            <button id="volunteer-button" class="button">Sign Up To Volunteer Here</button>
+        </div>
+
+        <!-- Announcements Page -->
+        <div id="announcements" class="page">
+            <h2 style="color: var(--primary-color); margin-bottom: 1rem;">Announcements</h2>
+            
+            <div class="announcement">
+                <p class="announcement-date">December 21, 2025</p>
+                <h3>Christmas Party!</h3>
+                <p>Join us for our annual Christmas party on Sunday, December 21nd at 12:00 PM. All children who have been practicing will perform the songs we've been learning. Family and friends are welcome!</p>
+            </div>
+
+            <div class="announcement">
+                <p class="announcement-date">January 6th, 2026</p>
+                <h3>No Classes on January 6th</h3>
+                <p>Please note that Sunday school will not meet on January 4th. We will resume regular classes on January 11th, 2026. Wishing all families a blessed holiday season!</p>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <h2 style="color: #8b0000; margin-bottom: 1rem;">Contact Us</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Sunday School Director</h3>
+                    <p><strong>Tania Moussa</strong></p>
+                    <p><strong>Email:</strong> director@stjamesorthodox.org</p>
+                    <p><strong>Phone:</strong> (951) 111-1111</p>
+                    <p><strong>Office Hours:</strong> Sunday, 9 AM - 3 PM</p>
+                </div>
+
+                <div class="card">
+                    <h3>Church Location</h3>
+                    <p>Saint James Antiochian Church</p>
+                    <p>925 S Melrose St</p>
+                    <p>Placentia, CA 92870</p>
+                </div>
+            </div>
+<!-- 
+            <form id="contact-form" style="margin-top: 2rem;">
+                <h3 style="color: #8b0000; margin-bottom: 1rem;">Send Us a Message</h3>
+                
+                <div class="form-group">
+                    <label for="contact-name">Your Name *</label>
+                    <input type="text" id="contact-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-email">Email Address *</label>
+                    <input type="email" id="contact-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="registration">Registration Question</option>
+                        <option value="volunteer">Volunteer Opportunities</option>
+                        <option value="curriculum">Curriculum Question</option>
+                        <option value="schedule">Schedule Question</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="button">Send Message</button>
+            </form> -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Saint James Greek Orthodox Church.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; color: white;">Sunday School Program</p>
+    </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
